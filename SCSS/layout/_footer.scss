@@ -1,0 +1,112 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-color);
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.logo__footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.address__title {
+  margin-bottom: 9px;
+  color: var(--white-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address__item {
+  display: block;
+}
+
+.address__item + .address__item {
+  margin-top: 9px;
+}
+
+.address__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  transition: color var(--time) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__join-social {
+  margin-left: 70px;
+}
+
+.join-social__title,
+.subscribe__title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-list__item {
+  margin-right: 10px;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 75px;
+  transition: background-color var(--time) var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social-list__icon {
+  fill: var(--white-color);
+}
+
+.footer__subscribe {
+  margin-left: auto;
+}
+
+.subscribe__input {
+  min-width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--footer-color);
+  outline: transparent;
+  padding: 15px 0 15px 16px;
+  margin-right: 12px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  transition: border-color var(--time) var(--timing-function);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
