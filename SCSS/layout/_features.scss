@@ -1,16 +1,20 @@
-.main__features {
+.section__main {
   padding-bottom: 0;
 }
 
 .features {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .features__item {
-  flex-basis: calc((100% - 90px) / 4);
-  margin-right: 30px;
-  &:nth-child(4n) {
-    margin-right: 0;
+width: 100%;
+  @media screen and (min-width:768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width:768px) {
+    width: calc((100% - 90px) / 4);
   }
 }
 
