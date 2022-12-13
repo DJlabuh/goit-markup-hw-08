@@ -164,8 +164,14 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
@@ -342,8 +348,10 @@ body {
   text-transform: uppercase;
 }
 
-.section__main {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .section__main {
+    padding-bottom: 0;
+  }
 }
 
 .features {
@@ -363,7 +371,7 @@ body {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .features__item {
     width: calc((100% - 90px) / 4);
   }
