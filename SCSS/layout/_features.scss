@@ -1,4 +1,4 @@
-.section__main {
+.section--features {
   @media screen and (min-width:1200px) {
     padding-bottom: 0;
   }
@@ -11,12 +11,12 @@
 }
 
 .features__item {
-width: 100%;
+flex-basis: 100%;
   @media screen and (min-width:768px) {
-    width: calc((100% - 30px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
   @media screen and (min-width:1200px) {
-    width: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 

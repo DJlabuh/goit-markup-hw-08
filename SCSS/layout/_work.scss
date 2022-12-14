@@ -1,13 +1,18 @@
+.section--work {
+  display: none;
+  @media screen and (min-width:1200px) {
+    display: block;
+  }
+}
+
 .work {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .work__item {
   flex-basis: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
 }
 
 .work__wrap-img {
