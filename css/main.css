@@ -124,6 +124,11 @@ body {
   margin-left: 10px;
   fill: var(--white-color);
 }
+@media screen and (max-width: 1200px) {
+  .button__icon {
+    margin-left: 12px;
+  }
+}
 
 .button--modal {
   width: 200px;
@@ -145,7 +150,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -224,9 +228,15 @@ body {
   color: var(--black-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__text {
@@ -631,25 +641,56 @@ body {
   background-color: var(--footer-color);
 }
 
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-wrap {
+    margin-right: 165px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .address-wrap {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-wrap {
+    margin-right: 0;
+  }
 }
 
 .logo__footer {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .address__title {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
   color: var(--white-color);
   font-style: normal;
   font-size: 14px;
@@ -661,7 +702,7 @@ body {
 }
 
 .address__item + .address__item {
-  margin-top: 9px;
+  margin-top: 12px;
 }
 
 .address__link {
@@ -677,8 +718,10 @@ body {
   color: var(--accent-color);
 }
 
-.footer__join-social {
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .footer__join-social {
+    margin-left: 70px;
+  }
 }
 
 .join-social__title,
@@ -691,11 +734,30 @@ body {
   text-transform: uppercase;
   color: var(--white-color);
 }
+@media screen and (max-width: 1200px) {
+  .join-social__title,
+.subscribe__title {
+    text-align: center;
+  }
+}
 
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .social-list {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .social-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .social-list__item {
@@ -730,12 +792,31 @@ body {
   fill: var(--white-color);
 }
 
-.footer__subscribe {
-  margin-left: auto;
+@media screen and (max-width: 1200px) {
+  .footer__subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer__subscribe {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__subscribe {
+    margin-left: auto;
+  }
 }
 
 .subscribe__input {
-  min-width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   letter-spacing: 0.03em;
@@ -743,7 +824,7 @@ body {
   background-color: var(--footer-color);
   outline: transparent;
   padding: 15px 0 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   -webkit-transition: border-color var(--time) var(--timing-function);
@@ -751,6 +832,17 @@ body {
 }
 .subscribe__input:hover, .subscribe__input:focus {
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .filter {

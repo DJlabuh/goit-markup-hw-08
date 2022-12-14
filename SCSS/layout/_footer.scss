@@ -5,18 +5,38 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @media screen and (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width:1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.address-wrap {
+  @media screen and (min-width:768px) {
+    margin-right: 165px;
+  }
+  @media screen and (max-width:1200px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width:1200px) {
+    margin-right: 0;
+  }
 }
 
 .logo__footer {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .address__title {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
   color: var(--white-color);
   font-style: normal;
   font-size: 14px;
@@ -28,7 +48,7 @@
 }
 
 .address__item + .address__item {
-  margin-top: 9px;
+  margin-top: 12px;
 }
 
 .address__link {
@@ -45,7 +65,9 @@
 }
 
 .footer__join-social {
-  margin-left: 70px;
+  @media screen and (min-width:1200px) {
+    margin-left: 70px;
+  }
 }
 
 .join-social__title,
@@ -57,10 +79,20 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  @media screen and (max-width:1200px) {
+    text-align: center;
+  }
 }
 
 .social-list {
   display: flex;
+  margin-bottom: 60px;
+  @media screen and (min-width:768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (max-width:1200px) {
+    justify-content: center;
+  }
 }
 
 .social-list__item {
@@ -90,11 +122,21 @@
 }
 
 .footer__subscribe {
-  margin-left: auto;
+  @media screen and (max-width:1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width:768px) and (max-width:1200px) {
+    width: 450px;
+  }
+  @media screen and (min-width:1200px) {
+    margin-left: auto;
+  }
 }
 
 .subscribe__input {
-  min-width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   letter-spacing: 0.03em;
@@ -102,11 +144,18 @@
   background-color: var(--footer-color);
   outline: transparent;
   padding: 15px 0 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   transition: border-color var(--time) var(--timing-function);
   &:hover,
   &:focus {
     border-color: var(--accent-color);
+  }
+  @media screen and (min-width:768px) {
+    width: 450px;
+  }
+  @media screen and (min-width:1200px) {
+    width: 358px;
+    margin-right: 12px;
   }
 }

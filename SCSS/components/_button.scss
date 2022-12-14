@@ -60,6 +60,9 @@
 .button__icon {
   margin-left: 10px;
   fill: var(--white-color);
+  @media screen and (max-width:1200px) {
+    margin-left: 12px;
+  }
 }
 
 .button--modal {
