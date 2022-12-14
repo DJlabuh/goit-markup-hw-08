@@ -49,13 +49,7 @@
 .social {
   display: flex;
   justify-content: center;
-}
-
-.social__item {
-  margin-right: 10px;
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
+  gap: 10px;
 }
 
 .social__link {
