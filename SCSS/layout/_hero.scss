@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
   height: 400px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: var(--grad-hero),
     url(../images/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -9,34 +9,39 @@
   padding: 118px 0;
   background-color: var(--footer-color);
   text-align: center;
+
   @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: var(--grad-hero),
+      url(../images/hero-bg-mobile-2x.jpg);
+  }
+
+  @media screen and (min-width:768px) {
+    background-image: var(--grad-hero),
+      url(../images/hero-bg-tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero-bg-mobile-2x.jpg);
+      background-image: var(--grad-hero),
+        url(../images/hero-bg-tablet-2x.jpg);
     }
-  @media screen and (min-width:768px) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero-bg-tablet.jpg);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/hero-bg-tablet-2x.jpg);
-        }
   }
+
   @media screen and (min-width:1200px) {
     max-width: 1600px;
     height: 600px;
     padding: 200px 0;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    background-image: var(--grad-hero),
       url(../images/hero-bg-desctop.jpg);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/hero-bg-desctop-2x.jpg);
-        }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: var(--grad-hero),
+        url(../images/hero-bg-desctop-2x.jpg);
+    }
   }
 }
 
@@ -55,6 +60,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   @media screen and (min-width:1200px) {
     font-size: 44px;
     line-height: 1.36;
