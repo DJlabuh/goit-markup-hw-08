@@ -143,6 +143,11 @@ body {
 .button--menu-open:hover .button__icon--menu-open, .button--menu-open:focus .button__icon--menu-open {
   fill: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .button__icon--menu-open {
+    display: none;
+  }
+}
 
 .button--modal {
   width: 200px;
@@ -266,6 +271,13 @@ body {
 .nav__list {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .nav__item {
   display: -webkit-box;
@@ -313,6 +325,13 @@ body {
 
 .contacts {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .contacts__item + .contacts__item {
