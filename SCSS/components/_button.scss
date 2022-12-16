@@ -65,6 +65,20 @@
   }
 }
 
+.button--menu-open {
+  background: transparent;
+  border: none;
+}
+
+.button__icon--menu-open {
+  fill: var(--primary-text-color);
+  transition: fill var(--time) var(--timing-function);
+  .button--menu-open:hover &,
+  .button--menu-open:focus & {
+    fill: var(--accent-color);
+  }
+}
+
 .button--modal {
   width: 200px;
   height: 50px;

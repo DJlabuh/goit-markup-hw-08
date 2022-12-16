@@ -6,6 +6,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .nav {
@@ -37,7 +39,8 @@
 }
 
 .nav__list {
-  display: flex;
+  display: none;
+  // display: flex;
 }
 
 .nav__item {
@@ -83,7 +86,8 @@
 }
 
 .contacts {
-  display: flex;
+  display: none;
+  // display: flex;
 }
 
 .contacts__item + .contacts__item {
