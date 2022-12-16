@@ -142,10 +142,14 @@
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 0.58;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   padding: 10px 0 20px 12px;
+  @media screen and (min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__square {
