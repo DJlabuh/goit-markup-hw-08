@@ -367,12 +367,12 @@ body {
     max-width: 1600px;
     height: 600px;
     padding: 200px 0;
-    background-image: var(--grad-hero), url(../images/hero-bg-desctop.jpg);
+    background-image: var(--grad-hero), url(../images/hero-bg-desktop.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--grad-hero), url(../images/hero-bg-desctop-2x.jpg);
+    background-image: var(--grad-hero), url(../images/hero-bg-desktop-2x.jpg);
   }
 }
 
