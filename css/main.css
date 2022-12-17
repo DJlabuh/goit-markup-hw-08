@@ -133,6 +133,9 @@ body {
 .button--menu-open {
   background: transparent;
   border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
 }
 
 .button__icon--menu-open {
