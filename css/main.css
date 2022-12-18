@@ -130,7 +130,7 @@ body {
   }
 }
 
-.button--menu-open {
+.button-mobmenu {
   background: transparent;
   border: none;
   width: 40px;
@@ -138,16 +138,16 @@ body {
   padding: 0;
 }
 
-.button__icon--menu-open {
+.button-mobmenu__icon {
   fill: var(--primary-text-color);
   -webkit-transition: fill var(--time) var(--timing-function);
   transition: fill var(--time) var(--timing-function);
 }
-.button--menu-open:hover .button__icon--menu-open, .button--menu-open:focus .button__icon--menu-open {
+.button-mobmenu:hover .button-mobmenu__icon, .button-mobmenu:focus .button-mobmenu__icon {
   fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
-  .button__icon--menu-open {
+  .button-mobmenu__icon {
     display: none;
   }
 }
@@ -1262,4 +1262,11 @@ body {
 
 .form__policy-link {
   color: #2196f3;
+}
+
+.mob-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white-color);
 }/*# sourceMappingURL=main.css.map */

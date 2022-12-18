@@ -60,12 +60,12 @@
 .button__icon {
   margin-left: 10px;
   fill: var(--white-color);
-  @media screen and (max-width:1200px) {
+  @media screen and (max-width: 1200px) {
     margin-left: 12px;
   }
 }
 
-.button--menu-open {
+.button-mobmenu {
   background: transparent;
   border: none;
   width: 40px;
@@ -73,15 +73,15 @@
   padding: 0;
 }
 
-.button__icon--menu-open {
+.button-mobmenu__icon {
   fill: var(--primary-text-color);
   transition: fill var(--time) var(--timing-function);
-  .button--menu-open:hover &,
-  .button--menu-open:focus & {
+  .button-mobmenu:hover &,
+  .button-mobmenu:focus & {
     fill: var(--accent-color);
   }
-  @media screen and (min-width:768px) {
-    display: none ;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
