@@ -91,21 +91,23 @@
   display: none;
   @media screen and (min-width:768px) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .contacts__item + .contacts__item {
-  margin-left: 50px;
+  @media screen and (min-width:1200px) {
+    margin-left: 50px;
+  }
+  margin-top: 10px;
 }
 
 .contacts__link {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--title-text-color);
@@ -115,6 +117,12 @@
   &:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
+  }
+  @media screen and (min-width:1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
