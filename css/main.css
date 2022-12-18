@@ -37,6 +37,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -137,6 +141,11 @@ body {
   height: 40px;
   padding: 0;
 }
+@media screen and (min-width: 768px) {
+  .button-mobmenu {
+    display: none;
+  }
+}
 
 .button-mobmenu__icon {
   fill: var(--primary-text-color);
@@ -145,11 +154,6 @@ body {
 }
 .button-mobmenu:hover .button-mobmenu__icon, .button-mobmenu:focus .button-mobmenu__icon {
   fill: var(--accent-color);
-}
-@media screen and (min-width: 768px) {
-  .button-mobmenu__icon {
-    display: none;
-  }
 }
 
 .button--modal {
@@ -339,11 +343,12 @@ body {
   }
 }
 
-.contacts__item + .contacts__item {
+.contacts__item:not(:first-child) {
   margin-top: 10px;
 }
 @media screen and (min-width: 1200px) {
-  .contacts__item + .contacts__item {
+  .contacts__item:not(:first-child) {
+    margin-top: 0;
     margin-left: 50px;
   }
 }
@@ -379,7 +384,12 @@ body {
 }
 
 .contacts__icon {
-  margin-right: 10px;
+  margin-right: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    margin-right: 10px;
+  }
 }
 
 .hero {

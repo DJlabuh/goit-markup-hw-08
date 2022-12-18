@@ -95,11 +95,12 @@
   }
 }
 
-.contacts__item + .contacts__item {
+.contacts__item:not(:first-child) {
+  margin-top: 10px;
   @media screen and (min-width:1200px) {
+    margin-top: 0;
     margin-left: 50px;
   }
-  margin-top: 10px;
 }
 
 .contacts__link {
@@ -127,5 +128,8 @@
 }
 
 .contacts__icon {
-  margin-right: 10px;
+  margin-right: 8px;
+  @media screen and (min-width:1200px) {
+    margin-right: 10px;
+  }
 }
